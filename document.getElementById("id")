@@ -1,0 +1,49 @@
+
+## Question statements:
+
+1. Change the main heading 'Fruit Shop' to 'Fruit World'.
+2. Change the font color of 'Fruit World' from black to orange.
+3. Change the background color of the div with id = "header" to green color.
+4. Add a bottom border of orange color to the div with id = "header".
+5. Change the font color of 'Fruits In Basket' from black to green.
+6. Introduce a paragraph element with text "Please visit us again" inside the div with id = "thanks".
+
+## HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <div id="header" style="padding: 1rem 0; background-color: lightblue">
+      <h1 id="main-heading" style="margin: 0">Fruit Shop</h1>
+    </div>
+    <div>
+      <h2 id="basket-heading">Fruits In Basket</h2>
+      <ul class="fruits">
+        <li class="fruit">Banana</li>
+        <li class="fruit">Apple</li>
+        <li class="fruit">Orange</li>
+        <li class="fruit">Kiwi</li>
+      </ul>
+    </div>
+    <div id="thanks"><p>Please visit us again</p></div>
+  </body>
+  <script src="index.js"></script>
+</html>
+
+
+
+solutions---------------------------------------------------------------->
+// Write your code below:
+document.getElementById("main-heading").innerHTML = "Fruit World";
+document.getElementById("main-heading").style.color = "orange";
+document.getElementById("header").style.backgroundColor = "green";
+document.getElementById("header").style.borderBottom = "2px solid orange";
+document.getElementById("basket-heading").style.color = "green";
+
+
