@@ -1,0 +1,48 @@
+# JavaScript Task: Modify HTML Elements
+
+## Question Statement:
+
+**Deliverable:**
+1. Make the 3rd element in the list have a yellow background color.
+2. Make all the elements in the list have a bold font.
+
+**HTML Code:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <div id="header" style="padding: 1rem 0; background-color: lightblue">
+      <h1 id="main-heading" style="margin: 0">Fruit Shop</h1>
+    </div>
+    <div>
+      <h2 id="basket-heading">Fruits In Basket</h2>
+      <ul class="fruits">
+        <li class="fruit">Banana</li>
+        <li class="fruit">Apple</li>
+        <li class="fruit">Orange</li>
+        <li class="fruit">Kiwi</li>
+      </ul>
+    </div>
+    <div id="thanks"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
+
+Solution :---------------------------------------------------
+
+// Write your code below:
+const fruitE = document.getElementsByClassName('fruit');
+
+// Set the background color of the 3rd element to yellow
+fruitE[2].style.backgroundColor = "yellow";
+
+// Set the font weight of all elements to bold
+for (let i = 0; i < fruitE.length; i++) {
+  fruitE[i].style.fontWeight = "bold";
+}
