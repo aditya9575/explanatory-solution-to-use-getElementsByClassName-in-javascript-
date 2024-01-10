@@ -1,0 +1,1 @@
+# explanatory-solution-to-use-getElementsByClassName-in-javascript-
